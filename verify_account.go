@@ -23,8 +23,8 @@ func VerifyBlocks(account string, blockEventRecords []BlockEventRecord, blockInt
 
 		if preBlockNumber - nextBlockNumber >= blockInterval {
 			ret.Range = append(ret.Range, RewardRange{
-				from: preBlockNumber,
-				to:   nextBlockNumber,
+				from: nextBlockNumber,
+				to:   preBlockNumber,
 			})
 		}
 	}
