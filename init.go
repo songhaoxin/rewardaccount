@@ -9,7 +9,7 @@ import (
 var db *sqlx.DB
 
 func init() {
-	database, err := sqlx.Open("mysql","deeperreader:pyV38DGJZz3Df7lwKjahw@tcp(mainnet-mysql-public.crzdyh02estr.us-east-1.rds.amazonaws.com:3306)/polkascan")
+	database, err := sqlx.Open("mysql","删除地址及帐号密码")
 	if err != nil {
 		fmt.Println("open mysql failed,", err)
 	}
